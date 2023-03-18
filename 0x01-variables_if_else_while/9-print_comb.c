@@ -13,8 +13,8 @@ int main(void)
 	{
 		putchar(num);
 		putchar(',');
+		putchar(' ');
 	}
 	putchar('9');
-	putchar('\n');
 	return (0);
 }
