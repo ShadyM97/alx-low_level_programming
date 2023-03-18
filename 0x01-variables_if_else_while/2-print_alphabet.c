@@ -13,6 +13,6 @@ int main(void)
 
 	for (alphabet = 97 ; alphabet < 123 ; alphabet++)
 		putchar(alphabet);
-	putchar(' ');
+	putchar('\n');
 	return (0);
 }
