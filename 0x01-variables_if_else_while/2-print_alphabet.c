@@ -10,7 +10,7 @@
 int main(void)
 {
 	char alphabet;
-	for(alphabet=97;alphabet<123;alphabet++)
+	for( alphabet = 97; alphabet < 124; alphabet++)
 		putchar(alphabet);
 
 	return (0);
