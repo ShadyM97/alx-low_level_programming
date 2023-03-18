@@ -13,7 +13,7 @@ int main(void)
 
 	for (alphabet = 97 ; alphabet < 123 ; alphabet++)
 		putchar(alphabet);
-	for (alphabet = 65 ; alphabt < 91 ; alphabet++)
+	for (alphabet = 65 ; alphabet < 91 ; alphabet++)
 		putchar(alphabet);
 	putchar('\n');
 	return (0);
