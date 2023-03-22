@@ -6,7 +6,7 @@
  *
  * Return: 1 if character is +ve. 0 if zero. -1 if -ve.
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 	if (n > 0)
 		return (1);
