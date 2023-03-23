@@ -2,7 +2,8 @@
 #include"main.h"
 /**
  * add - Adds two numbers
- * @x and @y to be added
+ * @x: First number
+ * @y: Second number
  *
  * Return: sum of two numberse
  */
