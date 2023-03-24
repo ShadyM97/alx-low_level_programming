@@ -21,8 +21,8 @@ void more_numbers(void)
 			{
 				_putchar('1');
 				flag = 10;
-			}
 
+			}
 			_putchar('0' + (j - flag));
 		}
 		_putchar('\n');
