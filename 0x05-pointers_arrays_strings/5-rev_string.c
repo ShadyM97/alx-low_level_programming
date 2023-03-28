@@ -18,10 +18,10 @@ void rev_string(char *s)
 		count++;
 	}
 	count = count - 1;
-	for (i = 0; i < (count / 2); i++)
+	for (i = 0; i <= (count / 2); i++)
 	{
 		tmp = s[i];
-		s[i] = s[count -i];
+		s[i] = s[count - i];
 		s[count - i] = tmp;
 	}
 }
