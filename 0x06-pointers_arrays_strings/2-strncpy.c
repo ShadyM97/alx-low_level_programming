@@ -12,9 +12,10 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	char* ptr = dest;
-	int i = 0;
+	int i;
 
-	if (dest == NULL || src == NULL || n ==0)
+	i = 0;
+	if (dest == NULL || src == NULL || n == 0)
 	{
 		return (dest);
 	}
