@@ -31,6 +31,7 @@ char *cap_string(char *s)
 					i == 0)
 			s[i] = s[i] - ('a' - 'A');
 		}
+
 		i++;
 	}
 	return (s);
