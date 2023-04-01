@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include"main.h"
 
 /**
@@ -15,10 +14,7 @@ char *string_toupper(char *s)
 	while (s[i] != '\0')
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
-		{
 			s[i] = s[i] - ('a' - 'A');
-		}
-		
 		i++;
 	}
 	return (s);
