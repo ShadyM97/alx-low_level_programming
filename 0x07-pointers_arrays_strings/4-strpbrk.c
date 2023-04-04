@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * _strpbrk - function that searches a string 
+  * _strpbrk - function that searches a string
   * @s: source array pointer
   * @accept: compare string
   * Return: pointer to the byte s on match
