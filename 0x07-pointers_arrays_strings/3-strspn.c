@@ -1,8 +1,7 @@
 #include "main.h"
-#include <string.h>
 
 /**
-  * _strchr - function gets the length of a prefix substring.
+  * _strspn - function gets the length of a prefix substring.
   * @s: source array pointer
   * @accept: compare string
   * Return: number of bytes in the initial segment
