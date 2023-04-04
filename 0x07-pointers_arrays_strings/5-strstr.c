@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * _strpbrk - function that locates a substring
+  * _strstr - function that locates a substring
   * @haystack: source array pointer
   * @needle: compare string
   * Return: pointer to the byte s on match
