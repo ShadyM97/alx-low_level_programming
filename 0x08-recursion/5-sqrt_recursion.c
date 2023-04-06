@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
   * findroot - fuction that finds natural root
-  * @num - input nunmber
-  * @root - counter
+  * @num: input nunmber
+  * @root: counter
+  * Return: natural root of num
   */
 
 int findroot(int num, int root)
