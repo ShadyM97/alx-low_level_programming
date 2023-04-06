@@ -8,11 +8,20 @@
 
 void _print_rev_recursion(char *s)
 {
-	if (*s)
+	int newLineFlag = 0;
+
+	if (*s == '\0' && *(s+1) != '\0')
 	{
-		_print_rev_recursion(s+1);
+		newLineFlag = 1;
+	}
+	if (*s != '\0')
+	{
+		_print_rev_recursion(s + 1);
 		_putchar(*s);
 	}
-	else
+	if (newLineFlag == 1)
+	{
 		_putchar('\n');
+		newLineFlag = 0;
+	}
 }
