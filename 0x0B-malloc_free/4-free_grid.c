@@ -3,7 +3,7 @@
   * free_grid - function that frees a 2 dimensional grid previously
   * created by your alloc_grid function.
   * @grid: input grid
-  * height: height of grid
+  * @height: height of grid
   * Return: void
   */
 void free_grid(int **grid, int height)
