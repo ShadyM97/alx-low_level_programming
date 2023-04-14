@@ -2,7 +2,7 @@
 /**
   * _strlen - function that gets string length
   * @string: input string
-  * Return: string length
+  * Return: string length (int)
   */
 int _strlen(char *str)
 {
@@ -25,28 +25,38 @@ int _strlen(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	unsigned int i = 0, j = 0, s1Len = 0, s2Len = 0;
+	unsigned int i = 0, j = 0, s1Len = 0, s2Len = 0, newStrLen = 0;
 
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	s1Len = _strlen(s1);
 	s2Len = _strlen(s2);
 	if (n >= s2Len)
-		str =malloc(sizeof(char) * s1Len + s2Len + 1);
+	{
+		newStrLen = s1Len + s2Len + 1;
+	}
 	else
 	{
-		str =malloc(sizeof(char) * s1Len + n + 1);
+		newStrLen = s1Len + n + 1;
+		s2Len = n;
 	}
-	if (!str)
+	str = malloc(sizeof(char) * newStrLen);
+	if (str == NULL)
+	{
 		return (NULL);
-
+	}
 	while (i < s1Len)
 	{
 		str[i] = s1[i];
 		i++;
 	}
-	while (n < s2Len && i < (s1Len + n))
-		str[i++] = s2[j++];
-	while (n >= s2Len && i < (s1Len + s2Len))
-		str[i++] = s2[j++];
-	str[i] = '\0';
+	while (j < s2Len)
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
 	return (str);
 }
