@@ -40,7 +40,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		newStrLen = s1Len + n + 1;
 		s2Len = n;
 	}
+
 	str = malloc(sizeof(char) * newStrLen);
+	if (!str)
+		return (NULL);
+
 	for (i = 0; i < s1Len; i++)
 		str[i] = s1[i];
 	for (j = 0; j < s2Len; j++)
