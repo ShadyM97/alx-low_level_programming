@@ -14,7 +14,6 @@ int _strlen(char *str)
 	}
 	return (len);
 }
-
 /**
  * string_nconcat - function that concatenates two strings.
  * @s1: string 1
@@ -28,11 +27,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i = 0, j = 0, s1Len = 0, s2Len = 0, newStrLen = 0;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
+	}
 	if (s2 == NULL)
+	{
 		s2 = "";
+	}
 	s1Len = _strlen(s1);
 	s2Len = _strlen(s2);
+
 	if (n >= s2Len)
 	{
 		newStrLen = s1Len + s2Len + 1;
