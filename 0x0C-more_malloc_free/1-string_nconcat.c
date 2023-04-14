@@ -16,7 +16,7 @@ int _strlen(char *str)
 }
 
 /**
- * malloc_checked - function that concatenates two strings.
+ * string_nconcat - function that concatenates two strings.
  * @s1: string 1
  * @s2: string 2
  * @n: number of bytes of s2
