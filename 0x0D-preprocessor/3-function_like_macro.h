@@ -4,6 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ABS(x) (x < 0) ? (x * -1) : (x)
+#define ABS(x) ((x > -1) ? (x) : (x * -1))
 
 #endif /* FUNCTION_LIKE_MACRO_H */
